@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Cormorant Garamond", serif;
+  
+  --color-gold-50: #faf7f2;
+  --color-gold-100: #f3efe0;
+  --color-gold-200: #e6dcbc;
+  --color-gold-300: #d6be90;
+  --color-gold-400: #ceab6d;
+  --color-gold-500: #C5A059; /* Rich Luxury Gold */
+  --color-gold-600: #b48e4b;
+  --color-gold-700: #947137;
+  --color-gold-800: #745628;
+  --color-gold-900: #583f1d;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b48e4b;
+}
+
+/* Glassmorphism custom classes and luxury borders */
+.glass {
+  background: rgba(5, 5, 5, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-accent {
+  background: rgba(197, 160, 89, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.25);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #f3efe0 0%, #C5A059 50%, #947137 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark {
+  color-scheme: dark;
+}
